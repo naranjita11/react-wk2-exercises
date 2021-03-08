@@ -1,9 +1,11 @@
 import './App.css';
-import Squares from "./Components/Squares/Squares";
+// import Squares from "./Components/Squares/Squares";
+import SignUp from "./Components/SignUp/SignUp"
 
 const App = () => (
   <>
-    <Squares colour="cornflowerblue" />
+    {/* <Squares colour="cornflowerblue" /> */}
+    <SignUp minimumLength={ 12 } />
   </>
 );
 
