@@ -31,12 +31,14 @@ class Articles extends Component {
                 <ul className="list-group">
                 { articles.map(article => (
                     <li key={ article.id } className="list-group-item">
-                        <div className="d-flex w-100 justify-content-between">
-                            <p>{ article.title }</p>
-                            <p>{ article.tags.map(tag => (
-                                <span className="badge bg-primary" key={ tag }>{ tag }</span>
-                            )) }</p>
-                        </div>
+                        <a href="news/id">
+                            <div className="d-flex w-100 justify-content-between">
+                                <p>{ article.title }</p>
+                                <p>{ article.tags.map(tag => (
+                                    <span className="badge bg-primary" key={ tag }>{ tag }</span>
+                                )) }</p>
+                            </div>
+                        </a>
                     </li>
                     )) }
                 </ul>
