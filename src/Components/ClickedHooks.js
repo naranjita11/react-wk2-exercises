@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const Clicked = () => {
+const ClickedHooks = () => {
 
     const [clicked, setClicked] = useState(false);
     const clickHandle = () => setClicked(true);
@@ -13,4 +13,4 @@ const Clicked = () => {
         </>
     );
 }
-export default Clicked;
+export default ClickedHooks;
