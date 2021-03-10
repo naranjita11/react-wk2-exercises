@@ -1,5 +1,6 @@
 import { Component } from "react";
 import axios from "../../axios";
+import Comments from "./Comments";
 
 class Article extends Component {
 
@@ -28,10 +29,11 @@ class Article extends Component {
 
     render() {
         let { title, content, tags} = this.state;
+        let { id } = this.props;
         
         return title === "" ? <p>Loading</p> : (
+            <>
             <div className="card">
-                
                 <h2 className="card-header">{ title }</h2>
                 <article className="card-body">
                     <p>{ content }</p>
@@ -39,8 +41,11 @@ class Article extends Component {
                         <span className="badge bg-primary" key={ tag }>{ tag }</span>
                     )) }</p>
                 </article>
-
             </div>
+            <div className="card">
+                <Comments articleID={ id } />
+            </div>
+            </>
         );
     }
 
