@@ -31,6 +31,7 @@ class Articles extends Component {
                 <ul className="list-group">
                 { articles.map(article => (
                     <li key={ article.id } className="list-group-item">
+                        {/* better to use a <Link> component instead of an <a> tag */}
                         <a href={"news/"+article.id}>
                             <div className="d-flex w-100 justify-content-between">
                                 <p>{ article.title }</p>
