@@ -27,11 +27,11 @@ class Articles extends Component {
         
         return !loaded ? <p>Loading...</p> : (
             <>
-                <h2>Articles</h2>
+                <h2>Blog Posts!</h2>
                 <ul className="list-group">
                 { articles.map(article => (
                     <li key={ article.id } className="list-group-item">
-                        <a href="news/id">
+                        <a href={"news/"+article.id}>
                             <div className="d-flex w-100 justify-content-between">
                                 <p>{ article.title }</p>
                                 <p>{ article.tags.map(tag => (
