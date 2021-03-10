@@ -8,6 +8,7 @@ import SquareHooks from "./Components/SquareHooks";
 import ToggleTextHooks from "./Components/ToggleTextHooks";
 import CounterHooks from "./Components/CounterHooks";
 import StepCounterHooks from "./Components/StepCounterHooks";
+import CatchMeIfYouCanHooks from "./Components/CatchMeIfYouCanHooks";
 
 const App = () => (
   <>
@@ -19,6 +20,7 @@ const App = () => (
     <ToggleTextHooks initial="Hello" alternate="World" />
     <CounterHooks initial={ 23 } max={ 100 } />
     <StepCounterHooks max={ 100 } step={ 5 } />
+    <CatchMeIfYouCanHooks jump={ 100 } />
   </>
 );
 
