@@ -1,10 +1,13 @@
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import Articles from "./News/Articles.js";
 import Article from "./News/Article.js";
+import Header from "./News/Header.js";
 // import FourOhFour from "./FourOhFour";
 
 const App = () => (
   <Router>
+    
+    <Header />
     
     <Route exact path="/news">
       <Articles />
