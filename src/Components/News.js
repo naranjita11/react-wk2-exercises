@@ -1,4 +1,5 @@
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { Router, Route, Switch } from "react-router-dom";
+import history from "../history";
 import Articles from "./News/Articles.js";
 import Article from "./News/Article.js";
 import Header from "./News/Header.js";
@@ -7,7 +8,7 @@ import FourOhFour from "../FourOhFour";
 // import FourOhFour from "./FourOhFour";
 
 const App = () => (
-  <Router>
+  <Router history={ history }>
     <>
       <Header />
       <Switch>
