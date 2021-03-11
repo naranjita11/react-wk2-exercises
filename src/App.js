@@ -9,6 +9,7 @@ import ToggleTextHooks from "./Components/ToggleTextHooks";
 import CounterHooks from "./Components/CounterHooks";
 import StepCounterHooks from "./Components/StepCounterHooks";
 import CatchMeIfYouCanHooks from "./Components/CatchMeIfYouCanHooks";
+import RollCallHooks from "./Components/RollCallHooks";
 
 const App = () => (
   <>
@@ -21,6 +22,7 @@ const App = () => (
     <CounterHooks initial={ 23 } max={ 100 } />
     <StepCounterHooks max={ 100 } step={ 5 } />
     <CatchMeIfYouCanHooks jump={ 100 } />
+    <RollCallHooks names={ ["Trevor", "Robert", "Melvin", "Bob"] }/>
   </>
 );
 
