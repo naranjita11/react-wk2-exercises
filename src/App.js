@@ -13,6 +13,8 @@ import RollCallHooks from "./Components/RollCallHooks";
 import PasswordStrengthHooks from "./Components/PasswordStrengthHooks";
 import TempConverterHooks from "./Components/TempConverterHooks";
 import ListHooks from "./Components/ListHooks";
+import ColoursHooks from "./Components/ColoursHooks";
+import DieHooks from "./Components/DieHooks";
 
 const App = () => (
   <>
@@ -29,6 +31,8 @@ const App = () => (
     <PasswordStrengthHooks />
     <TempConverterHooks />
     <ListHooks />
+    <ColoursHooks colours={ ["#C14412", "#EBB31A", "#8F5318", "#009EAD", "#395967"] } />
+    <DieHooks sides={ 27 } />
   </>
 );
 
