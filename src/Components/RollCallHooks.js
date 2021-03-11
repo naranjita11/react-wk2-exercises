@@ -4,14 +4,14 @@ import { useState } from "react";
 
 const RollCallHooks = ({ names }) => {
   
-    const [number, setNumber] = useState(0);
-    const handleClick = () => (number < (names.length -1) ? setNumber(number + 1) : setNumber(0));
+    const [indexNumber, setIndexNumber] = useState(0);
+    const handleClick = () => (indexNumber < (names.length -1) ? setIndexNumber(indexNumber + 1) : setIndexNumber(0));
 
     return (
         <>
             <h3 className="mt-4">Roll Call</h3>
             <div>
-                <p>{ names[number] }</p>
+                <p>{ names[indexNumber] }</p>
                 <button className="btn btn-primary" onClick={ handleClick }>
                     Next
                 </button>
