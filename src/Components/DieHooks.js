@@ -15,7 +15,7 @@ const DieHooks = ({ sides }) => {
     
     return (
         <>
-            <h3 className="mt-4">Die</h3>
+            <h3 className="mt-4">{ sides } sided Die</h3>
             <p onClick={ handleClick }>{ number }</p>
         </>
     );
