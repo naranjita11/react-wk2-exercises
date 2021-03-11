@@ -11,6 +11,7 @@ import StepCounterHooks from "./Components/StepCounterHooks";
 import CatchMeIfYouCanHooks from "./Components/CatchMeIfYouCanHooks";
 import RollCallHooks from "./Components/RollCallHooks";
 import PasswordStrengthHooks from "./Components/PasswordStrengthHooks";
+import TempConverterHooks from "./Components/TempConverterHooks";
 
 const App = () => (
   <>
@@ -25,6 +26,7 @@ const App = () => (
     <CatchMeIfYouCanHooks jump={ 100 } />
     <RollCallHooks names={ ["Trevor", "Robert", "Melvin", "Bob"] }/>
     <PasswordStrengthHooks />
+    <TempConverterHooks />
   </>
 );
 
