@@ -41,18 +41,8 @@ class CreateArticle extends Component {
             content: content,
             // could use a regex to ensure all spaces and commas are removed but this basically works too
             tags: tags.split(", "),
-        }).then(() => {
-            this.setState({ 
-                title: "",
-                content: "",
-                tags: "",
-            });
-        });
-
-        history.push("/news");
-
+        }).then(() => {history.push("/news")});
     }
-
 
     render() {
         let { title, content, tags} = this.state;
