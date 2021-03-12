@@ -29,9 +29,9 @@ class Comments extends Component {
         let { comments } = this.state;
         
         return (
-            <>
+            <div className="card mt-4">
                 <h4 className="card-header">Comments</h4>
-                <ul className="list-group">
+                <ul className="list-group list-group-flush">
                     {/* comments ? <p>No comments as yet... Why not post one?</p> : */}
                         { comments.map(comment => (
                             <li key={ comment.id } className="list-group-item">
@@ -41,9 +41,8 @@ class Comments extends Component {
                                     </div>
                             </li>
                         )) }
-
                 </ul>
-            </>
+            </div>
         );
     }
 
