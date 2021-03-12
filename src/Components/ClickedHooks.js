@@ -5,7 +5,6 @@ const ClickedHooks = () => {
     const [clicked, setClicked] = useState(false);
     const clickHandle = () => setClicked(true);
 
-    // display counter and setup click handler
     return (
         <>
             <h3 className="mt-4">Clicked</h3>

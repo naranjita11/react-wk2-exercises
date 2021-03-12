@@ -12,6 +12,7 @@ const CatchMeIfYouCanHooks = ({ jump }) => {
         <h3 className="mt-4">Catch Me If You Can</h3>
         <div>
             <button
+            // could use transform. don't need to set position in this case
               style={{ position: "relative", top: number }}
               className="btn btn-primary" 
               onClick={ handleClick }>
